@@ -1,2 +1,2 @@
-# wedding-invitation-user
+# WEDDING INVITATION
 청첩장
