@@ -25,7 +25,7 @@ function App() {
           textAlign: 'center',
         }}
       >
-        Copyright © 2021 KyuHyuk Lee
+        Copyright © 2023 JeongHyun Kim
       </Footer>
     </main>
   );

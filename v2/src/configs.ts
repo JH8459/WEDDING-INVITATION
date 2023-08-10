@@ -1,5 +1,5 @@
 import TitleImage from './resources/Title.png';
-import LocationMapImage from './resources/LocationMap.png';
+import LocationMapImage from './resources/LocationMap.jpg';
 import GalleryPhoto1 from './resources/Gallery_Photo_1.png';
 import GalleryPhoto2 from './resources/Gallery_Photo_2.png';
 import GalleryPhoto3 from './resources/Gallery_Photo_3.png';
@@ -11,23 +11,23 @@ const Configs: ConfigsType = {
   url: 'http://localhost:3000',
   kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
   kakaoImage: '카카오톡으로 공유할 때 사용되는 대표이미지 URL을 입력해주세요!',
-  weddingDate: '1970년 01월 01일, 목요일 오전 12시 00분',
-  weddingLocation: '○○○웨딩, ○층 ○○홀',
+  weddingDate: '2023년 11월 26일, 일요일 오전 11시 00분',
+  weddingLocation: '상록아트홀 웨딩컨벤션, ○층 ○○홀',
   groom: {
-    name: '○○○',
-    accountNumber: '○○은행 ***-***-******',
-    fatherName: '○○○',
+    name: '김정현',
+    accountNumber: '우리은행 1002-547-671831',
+    fatherName: '김중만',
     fatherAccountNumber: '○○은행 ***-***-******',
-    motherName: '○○○',
+    motherName: '박용옥',
     motherAccountNumber: '○○은행 ***-***-******',
   },
   bride: {
-    name: '○○○',
+    name: '한수지',
     accountNumber: '○○은행 ***-***-******',
-    fatherName: '○○○',
+    fatherName: '한원엽',
     fatherAccountNumber: '○○은행 ***-***-******',
-    motherName: '○○○',
-    motherAccountNumber: '○○은행 ***-***-******',
+    // motherName: '○○○',
+    // motherAccountNumber: '○○은행 ***-***-******',
   },
   titleImage: TitleImage,
   locationMapImage: LocationMapImage,

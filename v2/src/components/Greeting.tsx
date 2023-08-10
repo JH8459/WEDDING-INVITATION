@@ -68,7 +68,7 @@ const Greeting = ({ config }: GreetingProps) => {
           <br />
           {config.groom.fatherName} · {config.groom.motherName}의 아들 {config.groom.name}
           <br />
-          {config.bride.fatherName} · {config.bride.motherName}의 딸 {config.bride.name}
+          {config.bride.fatherName}의 딸 {config.bride.name}
         </SubTitle>
       </Layout>
     </section>
