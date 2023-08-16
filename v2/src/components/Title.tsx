@@ -16,7 +16,7 @@ const Layout = styled('div', {
   width: '100%',
   color: '#5D4037',
   textAlign: 'center',
-  marginTop: '3.5%',
+  marginTop: '3%',
   animation: 'fadein 2.5s',
 });
 
@@ -30,16 +30,16 @@ const TitleLayout = styled('p', {
 const SubTitleLayout = styled('p', {
   width: '100%',
   fontSize: isPortrait ? '1.2em' : '2em',
-  margin: '24px 0',
+  margin: '10px 0',
   fontWeight: '300',
 });
 
 const ImageLayout = styled('div', {
   width: '100%',
   background: '#DADADA',
-  bottom: '-5px',
+  bottom: '-30px',
   textAlign: 'center',
-  // position: 'absolute',
+  position: 'absolute',
 });
 
 const Image = styled('img', {
