@@ -12,7 +12,7 @@ const Configs: ConfigsType = {
   kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
   kakaoImage: '카카오톡으로 공유할 때 사용되는 대표이미지 URL을 입력해주세요!',
   weddingDate: '2023년 11월 26일, 일요일 오전 11시 00분',
-  weddingLocation: '상록아트홀 웨딩컨벤션, ○층 ○○홀',
+  weddingLocation: '상록아트홀 웨딩컨벤션, B1층 그랜드볼룸홀',
   groom: {
     name: '김정현',
     accountNumber: '우리은행 1002-547-671831',
