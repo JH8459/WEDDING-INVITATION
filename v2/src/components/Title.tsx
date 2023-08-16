@@ -39,7 +39,7 @@ const ImageLayout = styled('div', {
   background: '#DADADA',
   bottom: '-5px',
   textAlign: 'center',
-  position: 'absolute',
+  // position: 'absolute',
 });
 
 const Image = styled('img', {
