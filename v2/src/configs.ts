@@ -1,11 +1,11 @@
 import TitleImage from './resources/Title.jpg';
 import LocationMapImage from './resources/LocationMap.jpg';
-import GalleryPhoto1 from './resources/Gallery_Photo_1.png';
-import GalleryPhoto2 from './resources/Gallery_Photo_2.png';
-import GalleryPhoto3 from './resources/Gallery_Photo_3.png';
-import GalleryPhoto4 from './resources/Gallery_Photo_4.png';
-import GalleryPhoto5 from './resources/Gallery_Photo_5.png';
-import GalleryPhoto6 from './resources/Gallery_Photo_6.png';
+import GalleryPhoto1 from './resources/Gallery_Photo_1.jpg';
+import GalleryPhoto2 from './resources/Gallery_Photo_2.jpg';
+import GalleryPhoto3 from './resources/Gallery_Photo_3.jpg';
+import GalleryPhoto4 from './resources/Gallery_Photo_4.jpg';
+import GalleryPhoto5 from './resources/Gallery_Photo_5.jpg';
+import GalleryPhoto6 from './resources/Gallery_Photo_6.jpg';
 
 const Configs: ConfigsType = {
   url: 'http://localhost:3000',
