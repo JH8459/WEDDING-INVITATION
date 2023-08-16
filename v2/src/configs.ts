@@ -10,6 +10,8 @@ import GalleryPhoto7 from './resources/Gallery_Photo_7.jpg';
 import GalleryPhoto8 from './resources/Gallery_Photo_8.jpg';
 import GalleryPhoto9 from './resources/Gallery_Photo_9.jpg';
 import GalleryPhoto10 from './resources/Gallery_Photo_10.jpg';
+import GalleryPhoto11 from './resources/Gallery_Photo_11.jpg';
+import GalleryPhoto12 from './resources/Gallery_Photo_12.jpg';
 
 const Configs: ConfigsType = {
   url: 'http://localhost:3000',
@@ -46,6 +48,8 @@ const Configs: ConfigsType = {
     GalleryPhoto8,
     GalleryPhoto9,
     GalleryPhoto10,
+    GalleryPhoto11,
+    GalleryPhoto12,
   ],
 };
 
