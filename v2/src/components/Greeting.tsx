@@ -47,13 +47,13 @@ const Greeting = ({ config }: GreetingProps) => {
       }}
     >
       <Layout>
-        <Title>결혼합니다</Title>
+        <Title>결혼합니다!</Title>
         <SubTitle>
           {/* 여름에 태어난 {config.bride.name}
           <br />
-          가을에 태어난 {config.groom.name}
+          가을에 태어난 {config.groom.name} */}
           <br />
-          <br /> */}
+          <br />
           관심사도, 가치관도 달랐던 두 사람
           <br />
           사랑으로 닮은 꼴이 되어
