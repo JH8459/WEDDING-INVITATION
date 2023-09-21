@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { styled } from '@stitches/react';
 import { Col, Image, Row } from 'antd';
+import ImageGallery from 'react-image-gallery'
 import useOnScreen from '../hooks/useOnScreen';
 
 import { useWindowSize } from 'react-use';
@@ -31,6 +32,21 @@ const Gallery = ({ config }: GalleryProps) => {
   const ref = useRef<HTMLSelectElement>(null);
   const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-125px');
 
+  const images = [
+    {
+      original: 'https://picsum.photos/id/1018/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    },
+    {
+      original: 'https://picsum.photos/id/1015/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    },
+    {
+      original: 'https://picsum.photos/id/1019/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    },
+  ];
+
   return (
     <section
       ref={ref}
@@ -45,13 +61,14 @@ const Gallery = ({ config }: GalleryProps) => {
       <Layout>
         <Title>우리의 아름다운 순간</Title>
       </Layout>
-      <Row gutter={[16, 16]}>
+      {/* <Row gutter={[16, 16]}>
         {config.galleryImages.map((image, index) => (
           <Col key={index} span={isPortrait ? 6 : 3}>
             <Image width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} />
           </Col>
         ))}
-      </Row>
+      </Row> */}
+      <ImageGallery items={images} />
     </section>
   );
 };

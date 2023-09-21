@@ -36,8 +36,6 @@ const SubTitleLayout = styled('p', {
 const ImageLayout = styled('div', {
   width: '100%',
   background: '#DADADA',
-  // bottom: '-1px',
-  // marginTop: '-10%',
   textAlign: 'center',
   position: 'absolute',
 });
