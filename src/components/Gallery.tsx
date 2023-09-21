@@ -33,21 +33,6 @@ const Gallery = ({ config }: GalleryProps) => {
   const ref = useRef<HTMLSelectElement>(null);
   const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-125px');
 
-  const images = [
-    {
-      original: GalleryPhoto1,
-      thumbnail: GalleryPhoto1,
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
-
   return (
     <section
       ref={ref}
@@ -62,14 +47,7 @@ const Gallery = ({ config }: GalleryProps) => {
       <Layout>
         <Title>우리의 아름다운 순간</Title>
       </Layout>
-      {/* <Row gutter={[16, 16]}>
-        {config.galleryImages.map((image, index) => (
-          <Col key={index} span={isPortrait ? 6 : 3}>
-            <Image width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} />
-          </Col>
-        ))}
-      </Row> */}
-      <ImageGallery items={images} />
+      <ImageGallery items={config.galleryImages} />
     </section>
   );
 };

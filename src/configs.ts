@@ -12,6 +12,7 @@ import GalleryPhoto9 from './resources/Gallery_Photo_9.jpg';
 import GalleryPhoto10 from './resources/Gallery_Photo_10.jpg';
 import GalleryPhoto11 from './resources/Gallery_Photo_11.jpg';
 import GalleryPhoto12 from './resources/Gallery_Photo_12.jpg';
+import { ReactImageGalleryItem } from 'react-image-gallery';
 
 const Configs: ConfigsType = {
   url: 'http://localhost:3000',
@@ -38,18 +39,18 @@ const Configs: ConfigsType = {
   titleImage: TitleImage,
   locationMapImage: LocationMapImage,
   galleryImages: [
-    GalleryPhoto1,
-    GalleryPhoto2,
-    GalleryPhoto3,
-    GalleryPhoto4,
-    GalleryPhoto5,
-    GalleryPhoto6,
-    GalleryPhoto7,
-    GalleryPhoto8,
-    GalleryPhoto9,
-    GalleryPhoto10,
-    GalleryPhoto11,
-    GalleryPhoto12,
+    {original: GalleryPhoto1, thumbnail: GalleryPhoto1},
+    {original: GalleryPhoto2, thumbnail: GalleryPhoto2},
+    {original: GalleryPhoto3, thumbnail: GalleryPhoto3},
+    {original: GalleryPhoto4, thumbnail: GalleryPhoto4},
+    {original: GalleryPhoto5, thumbnail: GalleryPhoto5},
+    {original: GalleryPhoto6, thumbnail: GalleryPhoto6},
+    {original: GalleryPhoto7, thumbnail: GalleryPhoto7},
+    {original: GalleryPhoto8, thumbnail: GalleryPhoto8},
+    {original: GalleryPhoto9, thumbnail: GalleryPhoto9},
+    {original: GalleryPhoto10, thumbnail: GalleryPhoto10},
+    {original: GalleryPhoto11, thumbnail: GalleryPhoto11},
+    {original: GalleryPhoto12, thumbnail: GalleryPhoto12},
   ],
 };
 
@@ -63,7 +64,7 @@ export type ConfigsType = {
   bride: Person;
   titleImage: string;
   locationMapImage: string;
-  galleryImages: string[];
+  galleryImages: ReactImageGalleryItem[];
 };
 
 type Person = {
