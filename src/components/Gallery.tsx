@@ -3,6 +3,7 @@ import { styled } from '@stitches/react';
 import { Col, Image, Row } from 'antd';
 import ImageGallery from 'react-image-gallery'
 import useOnScreen from '../hooks/useOnScreen';
+import GalleryPhoto1 from '../resources/Gallery_Photo_1.jpg';
 
 import { useWindowSize } from 'react-use';
 import { ConfigsType } from '../configs';
@@ -34,8 +35,8 @@ const Gallery = ({ config }: GalleryProps) => {
 
   const images = [
     {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      original: GalleryPhoto1,
+      thumbnail: GalleryPhoto1,
     },
     {
       original: 'https://picsum.photos/id/1015/1000/600/',
