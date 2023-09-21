@@ -8,7 +8,7 @@ const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 const Section = styled('section', {
   height: '100%',
   background: '#DADADA',
-  // overflow: 'hidden',
+  overflow: 'hidden',
   position: 'relative',
 });
 
@@ -30,16 +30,16 @@ const TitleLayout = styled('p', {
 const SubTitleLayout = styled('p', {
   width: '100%',
   fontSize: isPortrait ? '1.2em' : '2em',
-  margin: '24px 0',
   fontWeight: '300',
 });
 
 const ImageLayout = styled('div', {
   width: '100%',
   background: '#DADADA',
-  // bottom: '-5px',
+  // bottom: '-1px',
+  // marginTop: '-10%',
   textAlign: 'center',
-  // position: 'absolute',
+  position: 'absolute',
 });
 
 const Image = styled('img', {
