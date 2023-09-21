@@ -8,7 +8,7 @@ const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 const Section = styled('section', {
   height: '100%',
   background: '#DADADA',
-  overflow: 'hidden',
+  // overflow: 'hidden',
   position: 'relative',
 });
 
@@ -58,8 +58,8 @@ const Title = ({ config }: TitleProps) => {
       <Confetti
         width={width}
         height={height}
-        numberOfPieces={300}
-        gravity={0.2}
+        numberOfPieces={500}
+        gravity={0.1}
         colors={['#FFCDD2', '#F8BBD0', '#D1C4E9']}
         recycle={false}
         style={{ position: 'fixed' }}
