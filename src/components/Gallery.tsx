@@ -1,18 +1,14 @@
 import { useRef } from 'react';
 import { styled } from '@stitches/react';
-import { Col, Image, Row } from 'antd';
 import ImageGallery from 'react-image-gallery'
 import useOnScreen from '../hooks/useOnScreen';
-import GalleryPhoto1 from '../resources/Gallery_Photo_1.jpg';
-
-import { useWindowSize } from 'react-use';
 import { ConfigsType } from '../configs';
 
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Layout = styled('div', {
   width: '100%',
-  padding: isPortrait ? '30% 0% 15% 5%' : '5% 0% 5% 10%',
+  padding: isPortrait ? '7.5% 0% 7.5% 5%' : '5% 0% 5% 10%',
 });
 
 const Title = styled('p', {
@@ -28,8 +24,6 @@ type GalleryProps = {
 };
 
 const Gallery = ({ config }: GalleryProps) => {
-  const { width } = useWindowSize();
-
   const ref = useRef<HTMLSelectElement>(null);
   const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-125px');
 
