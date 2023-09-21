@@ -10,7 +10,7 @@ const Layout = styled('div', {
 });
 
 const Envelope = styled('div', {
-  background: '#A5423A',
+  background: '#01579B',
   width: '100%',
   borderRadius: '10px',
   margin: '0 auto',
@@ -19,8 +19,8 @@ const Envelope = styled('div', {
 
 const Cover = styled('div', {
   padding: '20% 0',
-  border: '1px solid #BD503A',
-  backgroundColor: '#BD503A',
+  border: '1px solid #0277BD',
+  backgroundColor: '#0277BD',
   borderRadius: '10px 10px 50% 50% / 10px 10px 15% 15%',
   boxShadow: '0px 4px 0px -1px rgba(0,0,0,0.2)',
 });
@@ -46,13 +46,13 @@ const SubTitle = styled('div', {
   color: '#EEEEEE',
 });
 
-type HongBaoProps = {
+type HongBaoGroomProps = {
   title: string;
   subTitle: string;
   onClick?: () => void;
 };
 
-const HongBao = ({ title, subTitle, onClick }: HongBaoProps) => {
+const HongBaoGroom = ({ title, subTitle, onClick }: HongBaoGroomProps) => {
   return (
     <Layout onClick={onClick}>
       <Envelope>
@@ -66,4 +66,4 @@ const HongBao = ({ title, subTitle, onClick }: HongBaoProps) => {
   );
 };
 
-export default HongBao;
+export default HongBaoGroom;
