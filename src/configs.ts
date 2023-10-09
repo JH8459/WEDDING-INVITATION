@@ -1,7 +1,7 @@
 import { ReactImageGalleryItem } from 'react-image-gallery';
 
 const Configs: ConfigsType = {
-  url: 'http://wedding.jh8459.com',
+  url: 'https://wedding.jh8459.com',
   kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
   kakaoImage: 'https://user-images.githubusercontent.com/83164003/273562281-f22e4d70-a584-438a-914b-e3e15483cd5d.jpg',
   weddingDate: '2023년 11월 26일, 일요일 오전 11시 00분',
