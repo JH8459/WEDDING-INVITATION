@@ -1,23 +1,9 @@
-import TitleImage from './resources/Title.jpg';
-import LocationMapImage from './resources/LocationMap.jpg';
-import GalleryPhoto1 from './resources/Gallery_Photo_1.jpg';
-import GalleryPhoto2 from './resources/Gallery_Photo_2.jpg';
-import GalleryPhoto3 from './resources/Gallery_Photo_3.jpg';
-import GalleryPhoto4 from './resources/Gallery_Photo_4.jpg';
-import GalleryPhoto5 from './resources/Gallery_Photo_5.jpg';
-import GalleryPhoto6 from './resources/Gallery_Photo_6.jpg';
-import GalleryPhoto7 from './resources/Gallery_Photo_7.jpg';
-import GalleryPhoto8 from './resources/Gallery_Photo_8.jpg';
-import GalleryPhoto9 from './resources/Gallery_Photo_9.jpg';
-import GalleryPhoto10 from './resources/Gallery_Photo_10.jpg';
-import GalleryPhoto11 from './resources/Gallery_Photo_11.jpg';
-import GalleryPhoto12 from './resources/Gallery_Photo_12.jpg';
 import { ReactImageGalleryItem } from 'react-image-gallery';
 
 const Configs: ConfigsType = {
-  url: 'http://localhost:3000',
+  url: 'http://wedding.jh8459.com',
   kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
-  kakaoImage: '카카오톡으로 공유할 때 사용되는 대표이미지 URL을 입력해주세요!',
+  kakaoImage: 'https://user-images.githubusercontent.com/83164003/273562281-f22e4d70-a584-438a-914b-e3e15483cd5d.jpg',
   weddingDate: '2023년 11월 26일, 일요일 오전 11시 00분',
   weddingLocation: '상록아트홀 웨딩컨벤션, B1층 그랜드볼룸홀',
   groom: {
@@ -36,21 +22,21 @@ const Configs: ConfigsType = {
     // motherName: '○○○',
     // motherAccountNumber: '○○은행 ***-***-******',
   },
-  titleImage: TitleImage,
-  locationMapImage: LocationMapImage,
+  titleImage: 'https://user-images.githubusercontent.com/83164003/273562281-f22e4d70-a584-438a-914b-e3e15483cd5d.jpg',
+  locationMapImage: 'https://user-images.githubusercontent.com/83164003/273564624-6ea7c6fb-08b7-4ebb-ab24-f3018560ce4b.jpg',
   galleryImages: [
-    {original: GalleryPhoto1, thumbnail: GalleryPhoto1},
-    {original: GalleryPhoto2, thumbnail: GalleryPhoto2},
-    {original: GalleryPhoto3, thumbnail: GalleryPhoto3},
-    {original: GalleryPhoto4, thumbnail: GalleryPhoto4},
-    {original: GalleryPhoto5, thumbnail: GalleryPhoto5},
-    {original: GalleryPhoto6, thumbnail: GalleryPhoto6},
-    {original: GalleryPhoto7, thumbnail: GalleryPhoto7},
-    {original: GalleryPhoto8, thumbnail: GalleryPhoto8},
-    {original: GalleryPhoto9, thumbnail: GalleryPhoto9},
-    {original: GalleryPhoto10, thumbnail: GalleryPhoto10},
-    {original: GalleryPhoto11, thumbnail: GalleryPhoto11},
-    {original: GalleryPhoto12, thumbnail: GalleryPhoto12},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562318-327ea922-0a71-49b3-9905-6ddcad070e18.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562318-327ea922-0a71-49b3-9905-6ddcad070e18.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562368-6a8d41a2-0b42-4efd-9ef0-2645124ba7e4.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562368-6a8d41a2-0b42-4efd-9ef0-2645124ba7e4.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562467-5970b5fc-b94b-47c3-9f79-32fd459cca88.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562467-5970b5fc-b94b-47c3-9f79-32fd459cca88.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562560-cf760047-5b3e-4e7b-aa51-3b7ce657c66d.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562560-cf760047-5b3e-4e7b-aa51-3b7ce657c66d.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562636-4ed04ea9-9a61-40f3-8655-b28153bebc8f.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562636-4ed04ea9-9a61-40f3-8655-b28153bebc8f.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562710-dc496863-a1a7-4d09-8fe9-045f67b018a1.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562710-dc496863-a1a7-4d09-8fe9-045f67b018a1.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562765-028efcd8-d895-46d4-9ae0-8eb0626aaeab.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562765-028efcd8-d895-46d4-9ae0-8eb0626aaeab.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562841-cf2d67e8-a74e-476c-89a2-ce99841777de.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562841-cf2d67e8-a74e-476c-89a2-ce99841777de.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562888-d3797e95-3d94-4b53-9f85-f727ba4982ff.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562888-d3797e95-3d94-4b53-9f85-f727ba4982ff.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273562977-8737d48d-7439-41cd-ab4f-1cc848045429.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273562977-8737d48d-7439-41cd-ab4f-1cc848045429.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273563037-ea9cc49e-a9e5-451f-b447-459223856ac2.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273563037-ea9cc49e-a9e5-451f-b447-459223856ac2.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273563119-546b0348-5e71-4e85-8f94-35867d5f3c0a.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273563119-546b0348-5e71-4e85-8f94-35867d5f3c0a.jpg'},
   ],
 };
 
