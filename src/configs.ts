@@ -25,7 +25,7 @@ const Configs: ConfigsType = {
   titleImage: 'https://user-images.githubusercontent.com/83164003/273562281-f22e4d70-a584-438a-914b-e3e15483cd5d.jpg',
   locationMapImage: 'https://user-images.githubusercontent.com/83164003/273564624-6ea7c6fb-08b7-4ebb-ab24-f3018560ce4b.jpg',
   galleryImages: [
-    {original: 'https://user-images.githubusercontent.com/83164003/273608847-e5ab3f35-f1d8-4434-8f2b-a3948b46e3db.jpg', thumbnail: 'hhttps://user-images.githubusercontent.com/83164003/273614005-8b232828-05bc-4eb7-80e3-cef019b67b36.jpg'},
+    {original: 'https://user-images.githubusercontent.com/83164003/273608847-e5ab3f35-f1d8-4434-8f2b-a3948b46e3db.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273614005-8b232828-05bc-4eb7-80e3-cef019b67b36.jpg'},
     {original: 'https://user-images.githubusercontent.com/83164003/273608889-bfec1acc-c4e6-4d41-bcc5-f851a6b83928.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273614063-c7be7152-e657-4365-b064-ae597e784ad9.jpg'},
     {original: 'https://user-images.githubusercontent.com/83164003/273609008-c484b52e-b4aa-45c3-af13-bc1831d13e28.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273614129-e5730d5d-6ea7-4c1c-bc06-a6d231906d11.jpg'},
     {original: 'https://user-images.githubusercontent.com/83164003/273609104-0b6dcb06-0b77-4b72-bb72-1a3931dc17fa.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273614198-44cacd7d-2816-4025-8351-8fed243b6308.jpg'},
