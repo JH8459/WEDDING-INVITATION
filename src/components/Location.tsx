@@ -110,7 +110,7 @@ const Location = ({ config }: LocationProps) => {
             src={config.locationMapImage}
             alt="Wedding Invitation Title Picutre"
           /> */}
-          <div id = "map" style={{ width: isPortrait ? '90%' : '60%' , height: '400px' }}></div>
+          <div id = "map" style={{ width: isPortrait ? '100%' : '60%' , height: '300px' }}></div>
           <div onClick={getCurrentPosBtn}>현재 위치</div>
         </SubTitle>
       </Layout>
