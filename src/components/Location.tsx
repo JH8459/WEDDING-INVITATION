@@ -51,17 +51,48 @@ const Location = ({ config }: LocationProps) => {
       const container = document.getElementById("map");
       const options = {
         center: new window.kakao.maps.LatLng(37.503917, 127.042969),
-        level: 3,
+        level: 4,
       };
       
       const map = new window.kakao.maps.Map(container, options);
-
-      const markerPosition  = new window.kakao.maps.LatLng(37.503917, 127.042969);
-      // 결과값을 마커로 표시
+      
       const marker = new window.kakao.maps.Marker({
           map: map,
-          position: markerPosition,
+          position: new window.kakao.maps.LatLng(37.503917, 127.042969),
       });
+
+      var content = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            카카오 스페이스닷원' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="img">' +
+            '                <img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/thumnail.png" width="73" height="70">' +
+            '           </div>' + 
+            '            <div class="desc">' + 
+            '                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>' + 
+            '                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>' + 
+            '                <div><a href="https://www.kakaocorp.com/main" target="_blank" class="link">홈페이지</a></div>' + 
+            '            </div>' + 
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+      const overlay = new kakao.maps.CustomOverlay({
+        content: content,
+        map: map,
+        position: marker.getPosition()       
+      });
+
+      kakao.maps.event.addListener(marker, 'click', function() {
+        overlay.setMap(map);
+      });
+      // 커스텀 오버레이를 닫기 위해 호출되는 함수입니다 
+      function closeOverlay() {
+        overlay.setMap(null);     
+      }
       // 지도의 중심을 결과값으로 받은 위치로 이동
       marker.setMap(map);
     });
