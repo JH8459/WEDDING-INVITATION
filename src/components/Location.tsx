@@ -53,7 +53,7 @@ const Location = ({ config }: LocationProps) => {
     window.kakao.maps.load(() => {
       const container = document.getElementById("map");
       const options = {
-        center: new window.kakao.maps.LatLng(33.450701, 126.570667),
+        center: new window.kakao.maps.LatLng(37.503917, 127.042969),
         level: 3,
       };
       
