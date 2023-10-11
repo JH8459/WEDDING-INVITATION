@@ -44,9 +44,6 @@ type LocationProps = {
 };
 
 const Location = ({ config }: LocationProps) => {
-  const [map, setMap] = useState<any>();
-  const [marker, setMarker] = useState<any>();
-  
   const ref = useRef<HTMLSelectElement>(null);
 
   useEffect(() => {
@@ -57,37 +54,20 @@ const Location = ({ config }: LocationProps) => {
         level: 3,
       };
       
-      setMap(new window.kakao.maps.Map(container, options));
-      setMarker(new window.kakao.maps.Marker());
+      const map = new window.kakao.maps.Map(container, options);
+
+      const markerPosition  = new window.kakao.maps.LatLng(37.503917, 127.042969);
+      // 결과값을 마커로 표시
+      const marker = new window.kakao.maps.Marker({
+          map: map,
+          position: markerPosition,
+      });
+      // 지도의 중심을 결과값으로 받은 위치로 이동
+      marker.setMap(map);
     });
   }, []);
 
-  const getCurrentPosBtn = () => {
-    navigator.geolocation.getCurrentPosition(
-      getPosSuccess,
-      () => alert("위치 정보를 가져오는데 실패했습니다."),
-      {
-        enableHighAccuracy: true,
-        maximumAge: 30000,
-        timeout: 27000,
-      }
-    );
-  }
-
-  const getPosSuccess = (pos: GeolocationPosition) => {
-    // 현재 위치(위도, 경도) 가져온다.
-    var currentPos = new window.kakao.maps.LatLng(
-      pos.coords.latitude, // 위도
-      pos.coords.longitude // 경도
-    );
-    // 지도를 이동 시킨다.
-    map.panTo(currentPos);
-
-    // 기존 마커를 제거하고 새로운 마커를 넣는다.
-    marker.setMap(null);
-    marker.setPosition(currentPos);
-    marker.setMap(map);
-  };
+  
 
   return (
     <Section ref={ref}>
@@ -111,7 +91,6 @@ const Location = ({ config }: LocationProps) => {
             alt="Wedding Invitation Title Picutre"
           /> */}
           <div id = "map" style={{ width: isPortrait ? '95%' : '60%' , height: '300px' }}></div>
-          <div onClick={getCurrentPosBtn}>현재 위치</div>
         </SubTitle>
       </Layout>
     </Section>
