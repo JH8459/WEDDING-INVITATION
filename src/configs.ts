@@ -2,7 +2,7 @@ import { ReactImageGalleryItem } from 'react-image-gallery';
 
 const Configs: ConfigsType = {
   url: 'https://wedding.jh8459.com',
-  kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
+  kakaoToken: '3qeYJAZJbh-8xbbv9W7xhOq8EO8cm3W3flIQNfLwCiolEAAAAYse_Kwr',
   kakaoImage: 'https://user-images.githubusercontent.com/83164003/273562281-f22e4d70-a584-438a-914b-e3e15483cd5d.jpg',
   weddingDate: '2023년 11월 26일, 일요일 오전 11시 00분',
   weddingLocation: '상록아트홀 웨딩컨벤션, B1층 그랜드볼룸홀',
