@@ -1,6 +1,7 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { styled } from '@stitches/react';
 import { ConfigsType } from '../configs';
+import { kakao } from './kakao';
 
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
@@ -39,6 +40,16 @@ type LocationProps = {
 const Location = ({ config }: LocationProps) => {
   const ref = useRef<HTMLSelectElement>(null);
 
+  useEffect(() => {
+    const container = document.getElementById('map');
+		const options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		const map = new kakao.maps.Map(container, options);
+  }, [])
+
   return (
     <Section ref={ref}>
       <Layout>
@@ -52,11 +63,12 @@ const Location = ({ config }: LocationProps) => {
           (셔틀버스 : 2호선 선릉역 5번 출구에서 셔틀버스 운행)
           <br />
           <br />
-          <img
+          {/* <img
             style={{ width: isPortrait ? '90%' : '60%' }}
             src={config.locationMapImage}
             alt="Wedding Invitation Title Picutre"
-          />
+          /> */}
+          <div id = "map" style={{ width: isPortrait ? '90%' : '60%' }}></div>
         </SubTitle>
       </Layout>
     </Section>
