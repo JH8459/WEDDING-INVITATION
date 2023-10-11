@@ -58,9 +58,11 @@ const Location = ({ config }: LocationProps) => {
           서울특별시 강남구 언주로 508
           <br />
           <br />
-          2호선, 분당선 “선릉역” 5번 출구 도보 5분 거리입니다. 
+          2호선, 분당선 “선릉역” 5번 출구 
           <br />
-          (셔틀버스 : 2호선 선릉역 5번 출구에서 셔틀버스 운행)
+          도보 5분 거리입니다. 
+          <br />
+          (2호선 선릉역 5번 출구에서 셔틀버스 운행)
           <br />
           <br />
           {/* <img
@@ -68,7 +70,7 @@ const Location = ({ config }: LocationProps) => {
             src={config.locationMapImage}
             alt="Wedding Invitation Title Picutre"
           /> */}
-          <div id = "map" style={{ width: isPortrait ? '90%' : '60%' }}></div>
+          <div id = "map" style={{ width: '500px', height: '500px' }}></div>
         </SubTitle>
       </Layout>
     </Section>
