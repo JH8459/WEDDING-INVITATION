@@ -7,11 +7,12 @@ const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Layout = styled('div', {
   width: '100%',
-  padding: isPortrait ? '30% 0% 15% 5%' : '5% 0% 5% 10%',
+  textAlign: 'center',
+  padding: isPortrait ? '15% 0% 0% 0%' : '5% 0% 0% 0%',
 });
 
 const Title = styled('p', {
-  color: '#795548',
+  color: '#000000',
   width: '100%',
   fontSize: isPortrait ? '2.5em' : '3.5em',
   margin: 0,
@@ -19,7 +20,7 @@ const Title = styled('p', {
 });
 
 const SubTitle = styled('p', {
-  color: '#795548',
+  color: '#000000',
   width: '100%',
   fontSize: isPortrait ? '1.2em' : '2em',
   margin: '24px 0',
@@ -39,15 +40,15 @@ const Greeting = ({ config }: GreetingProps) => {
     <section
       ref={ref}
       style={{
-        height: '100vh',
-        background: onScreen ? '#EFEBE9' : '#DADADA',
+        height: 'calc(var(--vh, 1vh) * 100)',
+        background: '#C4CDD4',
         overflow: 'hidden',
         position: 'relative',
         transition: 'background 1s ease-in',
       }}
     >
       <Layout>
-        <Title>결혼합니다!</Title>
+        <Title>우리 결혼합니다!</Title>
         <SubTitle>
           {/* 여름에 태어난 {config.bride.name}
           <br />
@@ -66,9 +67,9 @@ const Greeting = ({ config }: GreetingProps) => {
           힘찬 출발의 자리를 빛내주시기 바랍니다.
           <br />
           <br />
-          {config.groom.fatherName} · {config.groom.motherName}의 아들 {config.groom.name}
+          {config.groom.fatherName} · {config.groom.motherName}의 아들 {config.groom.middleName}
           <br />
-          {config.bride.fatherName}의 딸 {config.bride.name}
+          {config.bride.fatherName}의 딸 {config.bride.middleName}
         </SubTitle>
       </Layout>
     </section>

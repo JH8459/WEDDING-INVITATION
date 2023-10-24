@@ -6,7 +6,7 @@ import { kakao } from './kakao';
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Section = styled('section', {
-  background: '#EFEBE9',
+  background: '#C4CDD4',
   overflow: 'hidden',
   position: 'relative',
 });
@@ -17,7 +17,7 @@ const Layout = styled('div', {
 });
 
 const Title = styled('p', {
-  color: '#795548',
+  color: '#000000',
   width: '100%',
   fontSize: isPortrait ? '2.5em' : '3.5em',
   margin: 0,
@@ -25,7 +25,7 @@ const Title = styled('p', {
 });
 
 const SubTitle = styled('p', {
-  color: '#795548',
+  color: '#000000',
   width: '100%',
   fontSize: isPortrait ? '1.2em' : '2em',
   margin: '24px 0',
@@ -45,6 +45,7 @@ type LocationProps = {
 
 const Location = ({ config }: LocationProps) => {
   const ref = useRef<HTMLSelectElement>(null);
+  const [level, setLevel] = useState();
 
   useEffect(() => {
     window.kakao.maps.load(() => {
@@ -53,7 +54,11 @@ const Location = ({ config }: LocationProps) => {
       const markerImgSize = new kakao.maps.Size(50, 50); // 마커이미지의 크기
       const markerImgOption = { offset: new kakao.maps.Point(25, 50) }; // 마커이미지의 옵션
       const markerImg = new kakao.maps.MarkerImage(markerImgSrc, markerImgSize, markerImgOption);
-      const mapPosition = new window.kakao.maps.LatLng(37.503917, 127.042969)
+      const mapPosition = new window.kakao.maps.LatLng(37.503917, 127.042969);
+      // 맵 컨트롤러 (지도/스카이뷰)
+      const mapTypeControl = new kakao.maps.MapTypeControl();
+      // 줌 컨트롤러
+      const zoomControl = new kakao.maps.ZoomControl();
       const mapOptions = {
         center: mapPosition,
         level: 3,
@@ -61,6 +66,9 @@ const Location = ({ config }: LocationProps) => {
 
       const map = new window.kakao.maps.Map(mapContainer, mapOptions);
       const marker = new kakao.maps.Marker({ map, position: mapPosition, image: markerImg, clickable: true });
+      // 맵 애드온(컨트롤러 & 줌) 추가
+      map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+      map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
       // 지도의 중심을 결과값으로 받은 위치로 이동
       marker.setMap(map);
 

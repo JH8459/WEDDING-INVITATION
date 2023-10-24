@@ -6,10 +6,20 @@ import CongratulatoryMoney from './components//CongratulatoryMoney';
 import Configs from './configs';
 import Share from './components/Share';
 import { Layout } from 'antd';
+import { useEffect } from 'react';
 
 const { Footer } = Layout;
 
 function App() {
+  function setScreenSize() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+  }
+  useEffect(() => {
+    setScreenSize();
+  });
+
   return (
     <main style={{ height: '100%' }}>
       <TitleLayout config={Configs} />
@@ -20,7 +30,7 @@ function App() {
       <Share config={Configs} />
       <Footer
         style={{
-          background: '#D7CCC8',
+          background: '#C4CDD4',
           opacity: 0.6,
           textAlign: 'center',
         }}

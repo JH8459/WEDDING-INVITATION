@@ -6,15 +6,15 @@ import { ConfigsType } from '../configs';
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Section = styled('section', {
-  height: '100%',
-  background: '#DADADA',
+  height: 'calc(var(--vh, 1vh) * 100)',
+  background: '#C4CDD4',
   overflow: 'hidden',
   position: 'relative',
 });
 
 const Layout = styled('div', {
   width: '100%',
-  color: '#5D4037',
+  color: '#000000',
   textAlign: 'center',
   marginTop: '3.5%',
   animation: 'fadein 2.5s',
@@ -73,10 +73,10 @@ const Title = ({ config }: TitleProps) => {
             <br />
             {config.weddingLocation}
           </SubTitleLayout>
+          <ImageLayout>
+            <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />
+          </ImageLayout>
         </Layout>
-        <ImageLayout>
-          <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />
-        </ImageLayout>
       </Section>
     </>
   );

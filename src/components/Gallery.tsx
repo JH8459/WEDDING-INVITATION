@@ -8,12 +8,13 @@ const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Layout = styled('div', {
   width: '100%',
-  padding: isPortrait ? '7.5% 0% 7.5% 5%' : '5% 0% 5% 10%',
+  padding: isPortrait ? '7.5% 0% 7.5% 0%' : '5% 0% 5% 0%',
 });
 
 const Title = styled('p', {
-  color: '#FFFFFF',
+  color: '#000000',
   width: '100%',
+  textAlign: 'center',
   fontSize: isPortrait ? '2.5em' : '3.5em',
   margin: 0,
   fontWeight: '500',
@@ -31,8 +32,8 @@ const Gallery = ({ config }: GalleryProps) => {
     <section
       ref={ref}
       style={{
-        height: '110vh',
-        background: onScreen ? '#212121' : '#EFEBE9',
+        height: 'calc(var(--vh, 1vh) * 120)',
+        background: '#C4CDD4',
         overflow: 'hidden',
         position: 'relative',
         transition: 'background 1s ease-in',

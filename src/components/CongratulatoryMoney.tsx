@@ -9,18 +9,19 @@ import HongBaoBride from './HongBaoBride';
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Section = styled('section', {
-  background: '#EFEBE9',
+  background: '#C4CDD4',
   overflow: 'hidden',
   position: 'relative',
 });
 
 const Layout = styled('div', {
   width: '100%',
-  padding: isPortrait ? '10% 0% 10% 5%' : '5% 0% 5% 10%',
+  textAlign: 'center',
+  padding: isPortrait ? '10% 0% 10% 0%' : '5% 0% 5% 0%',
 });
 
 const Title = styled('p', {
-  color: '#795548',
+  color: '#000000',
   width: '100%',
   fontSize: isPortrait ? '2.5em' : '3.5em',
   margin: 0,
@@ -28,7 +29,7 @@ const Title = styled('p', {
 });
 
 const SubTitle = styled('p', {
-  color: '#795548',
+  color: '#000000',
   width: '100%',
   fontSize: isPortrait ? '1.2em' : '2em',
   margin: '24px 0',
@@ -42,6 +43,7 @@ const GridLayout = styled('div', {
 });
 
 const Description = styled('p', {
+  textAlign: 'center',
   fontSize: '1em',
   lineHeight: 1.75,
   opacity: 0.65,

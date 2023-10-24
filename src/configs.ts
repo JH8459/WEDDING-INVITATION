@@ -7,6 +7,7 @@ const Configs: ConfigsType = {
   weddingDate: '2023년 11월 26일, 일요일 오전 11시 00분',
   weddingLocation: '상록아트홀 웨딩컨벤션, B1층 그랜드볼룸홀',
   groom: {
+    middleName: '정현',
     name: '김정현',
     accountNumber: '우리은행 1002-547-671831',
     fatherName: '김중만',
@@ -15,6 +16,7 @@ const Configs: ConfigsType = {
     motherAccountNumber: '○○은행 ***-***-******',
   },
   bride: {
+    middleName: '수지',
     name: '한수지',
     accountNumber: '○○은행 ***-***-******',
     fatherName: '한원엽',
@@ -54,6 +56,7 @@ export type ConfigsType = {
 };
 
 type Person = {
+  middleName: string;
   name: string;
   accountNumber: string;
   fatherName?: string;
