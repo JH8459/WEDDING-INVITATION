@@ -49,18 +49,24 @@ const Location = ({ config }: LocationProps) => {
   useEffect(() => {
     window.kakao.maps.load(() => {
       const mapContainer = document.getElementById("map");
-      const mapPosition = new window.kakao.maps.LatLng(37.505734, 127.043147)
-      const markerPosition = new window.kakao.maps.LatLng(37.503917, 127.042969)
+      const markerImgSrc = 'https://github.com/JH8459/WEDDING-INVITATION-LETTER/assets/83164003/74c29a07-3111-4dc9-b251-c75b9ceb59e0';
+      const markerImgSize = new kakao.maps.Size(50, 50); // 마커이미지의 크기
+      const markerImgOption = { offset: new kakao.maps.Point(25, 50) }; // 마커이미지의 옵션
+      const markerImg = new kakao.maps.MarkerImage(markerImgSrc, markerImgSize, markerImgOption);
+      const mapPosition = new window.kakao.maps.LatLng(37.503917, 127.042969)
       const mapOptions = {
-        center: markerPosition,
+        center: mapPosition,
         level: 3,
       };
 
       const map = new window.kakao.maps.Map(mapContainer, mapOptions);
-      const marker = new kakao.maps.Marker({ map, position: markerPosition });
-
+      const marker = new kakao.maps.Marker({ map, position: mapPosition, image: markerImg, clickable: true });
       // 지도의 중심을 결과값으로 받은 위치로 이동
       marker.setMap(map);
+
+      kakao.maps.event.addListener(marker, 'click', function () {
+        window.open('https://map.kakao.com/?urlX=509460&urlY=1112355&urlLevel=3&itemId=2009675378&q=%EC%83%81%EB%A1%9D%EC%95%84%ED%8A%B8%ED%99%80&srcid=2009675378&map_type=TYPE_MAP');
+      });
     });
   }, []);
 
