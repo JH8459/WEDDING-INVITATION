@@ -58,7 +58,7 @@ const Title = ({ config }: TitleProps) => {
         height={height}
         numberOfPieces={500}
         gravity={0.1}
-        colors={['#FFCDD2', '#F8BBD0', '#D1C4E9']}
+        colors={['#FFCDD2', '#F8BBD0', '#BBE4F8']}
         recycle={false}
         style={{ position: 'fixed' }}
       />

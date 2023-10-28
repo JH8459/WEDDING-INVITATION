@@ -12,7 +12,7 @@ const Layout = styled('div', {
 });
 
 const Title = styled('p', {
-  color: '#000000',
+  color: '#FFFFFF',
   width: '100%',
   textAlign: 'center',
   fontSize: isPortrait ? '2.5em' : '3.5em',
@@ -32,15 +32,15 @@ const Gallery = ({ config }: GalleryProps) => {
     <section
       ref={ref}
       style={{
-        height: 'calc(var(--vh, 1vh) * 120)',
-        background: '#C4CDD4',
+        height: 'calc(var(--vh, 1vh) * 110)',
+        background: '#000000',
         overflow: 'hidden',
         position: 'relative',
         transition: 'background 1s ease-in',
       }}
     >
       <Layout>
-        <Title>우리의 아름다운 순간</Title>
+        {/* <Title>ㅤ</Title> */}
       </Layout>
       <ImageGallery items={config.galleryImages} />
     </section>

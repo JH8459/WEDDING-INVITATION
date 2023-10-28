@@ -127,7 +127,7 @@ const Share = ({ config }: ShareProps) => {
           size="large"
           onClick={() => setShareCount(shareCount + 1)}
         >
-          카카오톡으로 공유하기
+          카카오톡 공유하기
         </KakaoTalkShareButton>
         <CopyToClipboard text={config.url}>
           <LinkShareButton
