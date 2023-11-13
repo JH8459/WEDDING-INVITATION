@@ -1,7 +1,7 @@
 # Wedding Invitation React.js Template
 
 결혼식 초대를 위한 모바일 청첩장 템플릿입니다.  
-이 저장소가 마음에 들거나 사용하게 되신다면, Star와 Fork 부탁드리겠습니다😉
+이 저장소가 마음에 들거나 사용하게 되신다면, Star와 Fork 부탁드리겠습니다 🤔
 
 <br/>
 <br/>
@@ -31,6 +31,15 @@
 ## Wedding Invitation 수정 방법
 
 무료(?) 저장소인 Github ISSUE를 활용해서 이미지를 업로드해주세요.
+
+<p align = "center">
+  <img src = "https://github.com/JH8459/WEDDING-INVITATION-LETTER/assets/83164003/02dbf050-2435-4b74-b739-58e2ed709c10" />
+</p>
+
+- 1:1 비율의 썸네일 이미지
+- 3:4 비율의 메인 이미지
+
+두가지 형태의 비율을 가진 이미지를 따로 작업하여 사용하였습니다.
 
 <br/>
 <br/>
