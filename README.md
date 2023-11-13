@@ -30,6 +30,11 @@
 
 ## Wedding Invitation 수정 방법
 
+무료(?) 저장소인 Github ISSUE를 활용해서 이미지를 업로드해주세요.
+
+<br/>
+<br/>
+
 `./public/index.html`의 `<head>` 부분을 알맞게 수정해 주세요.
 
 ```html
