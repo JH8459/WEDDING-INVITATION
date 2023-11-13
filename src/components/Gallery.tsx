@@ -32,7 +32,7 @@ const Gallery = ({ config }: GalleryProps) => {
     <section
       ref={ref}
       style={{
-        height: 'calc(var(--vh, 1vh) * 110)',
+        height: 'calc(var(--vh, 1vh) * 120)',
         background: '#000000',
         overflow: 'hidden',
         position: 'relative',

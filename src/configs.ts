@@ -5,7 +5,7 @@ const Configs: ConfigsType = {
   kakaoToken: '2008bccbd81402de5992818f3e371324',
   kakaoImage: 'https://github.com/JH8459/WEDDING-INVITATION-LETTER/assets/83164003/bbbd2383-4f2d-4b14-9582-48d3060d6505',
   weddingDate: '2023년 11월 26일, 일요일 오전 11시 00분',
-  weddingLocation: '상록아트홀 웨딩컨벤션, B1층 그랜드볼룸홀',
+  weddingLocation: '상록아트홀 웨딩컨벤션, L층 그랜드볼룸홀',
   groom: {
     middleName: '정현',
     name: '김정현',
@@ -44,7 +44,6 @@ const Configs: ConfigsType = {
     { original: 'https://user-images.githubusercontent.com/83164003/273608889-bfec1acc-c4e6-4d41-bcc5-f851a6b83928.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273614063-c7be7152-e657-4365-b064-ae597e784ad9.jpg' },
     { original: 'https://user-images.githubusercontent.com/83164003/278811601-64fdfa3a-19af-4ca6-a841-526320679d5b.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/278811603-f89bac53-69c6-44e0-acea-99e70fc438f9.jpg' },
     { original: 'https://user-images.githubusercontent.com/83164003/273609304-240d0a48-e964-4f0c-a630-8710c6abe261.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/273614324-7fa9c421-3447-434f-9ffa-dbfa0abafbb9.jpg' },
-    // { original: 'https://user-images.githubusercontent.com/83164003/278811578-a9b308c8-8550-4165-a841-2295b0fb5023.jpg', thumbnail: 'https://user-images.githubusercontent.com/83164003/278811581-4fc3807a-63b6-444b-bcd7-f28c61f35e03.jpg' },
   ],
 };
 

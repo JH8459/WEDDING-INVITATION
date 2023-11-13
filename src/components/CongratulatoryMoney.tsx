@@ -39,6 +39,7 @@ const SubTitle = styled('p', {
 
 const GridLayout = styled('div', {
   display: 'grid',
+  width: '100%',
   gridTemplateColumns: '50% 50%',
 });
 

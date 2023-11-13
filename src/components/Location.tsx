@@ -63,7 +63,7 @@ const KakaoMapButton = styled(Button, {
 });
 
 const Image = styled('img', {
-  width: isPortrait ? '100%' : '40%',
+  width: isPortrait ? '100%' : '70%',
 });
 
 const Description = styled('p', {
@@ -144,7 +144,7 @@ const Location = ({ config }: LocationProps) => {
               size="large"
               onClick={() => window.open('https://map.kakao.com/?urlX=509460&urlY=1112355&urlLevel=3&itemId=2009675378&q=%EC%83%81%EB%A1%9D%EC%95%84%ED%8A%B8%ED%99%80&srcid=2009675378&map_type=TYPE_MAP')}
             >
-              카카오맵 바로가기
+              카카오맵
             </KakaoMapButton>
           </ButtonLayout>
           <br />
@@ -159,7 +159,7 @@ const Location = ({ config }: LocationProps) => {
           (2호선 선릉역 5번 출구에서 셔틀버스 운행)
           <br />
           <br />
-          <div id="map" style={{ width: isPortrait ? '100%' : '60%', height: '300px' }}></div>
+          <div id="map" style={{ width: isPortrait ? '100%' : '100%', height: isPortrait ? '300px' : '900px' }}></div>
         </SubTitle>
       </Layout>
       <Modal
@@ -171,7 +171,7 @@ const Location = ({ config }: LocationProps) => {
         okButtonProps={{ style: { display: 'none' } }}
         footer={[<Description>차량 이용시 주차 시간은 1시간 30분 제공됩니다.</Description>]}
       >
-        <div>
+        <div style={{ textAlign: 'center' }}>
           <Image src={config.locationMapImage} alt="Location" />
         </div>
       </Modal>

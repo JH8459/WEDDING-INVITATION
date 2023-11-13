@@ -35,13 +35,13 @@ const SubTitleLayout = styled('p', {
 
 const ImageLayout = styled('div', {
   width: '100%',
-  background: '#DADADA',
+  background: '#C4CDD4',
   textAlign: 'center',
   position: 'absolute',
 });
 
 const Image = styled('img', {
-  width: isPortrait ? '100%' : '40%',
+  width: isPortrait ? '100%' : '30%',
 });
 
 type TitleProps = {
