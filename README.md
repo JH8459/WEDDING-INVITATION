@@ -1,11 +1,21 @@
 # Wedding Invitation React.js Template
 
-결혼식 초대를 위한 청첩장 템플릿입니다.  
+결혼식 초대를 위한 모바일 청첩장 템플릿입니다.  
 이 저장소가 마음에 들거나 사용하게 되신다면, Star와 Fork 부탁드리겠습니다😉
+
+<br/>
+<br/>
 
 ## Template Preview
 
 ### Wedding Invitation
+
+<p align = "center">
+  <img src = "https://github.com/JH8459/WEDDING-INVITATION-LETTER/assets/83164003/a2cf1485-7a73-4302-9b37-43f979a84418" />
+</p>
+
+<br/>
+<br/>
 
 ## 템플릿에 포함하고 있는 내용 및 기능
 
@@ -13,6 +23,9 @@
 - 사진첩(react-image-gallery 라이브러리)
 - 축의금을 보내실 곳 (계좌번호 클립보드 복사 기능 지원)
 - 카카오톡 공유 기능 및 링크 공유 기능
+
+<br/>
+<br/>
 
 ## Wedding Invitation 수정 방법
 
@@ -27,6 +40,8 @@
 <meta property="og:url" content="https://wedding.jh8459.com" />
 <meta name="theme-color" content="#BCAAA4" />
 ```
+<br/>
+<br/>
 
 `./src/configs.ts`를 수정하여 사용합니다.
 
