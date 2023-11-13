@@ -32,9 +32,15 @@
 
 무료(?) 저장소인 Github ISSUE를 활용해서 이미지를 업로드해주세요.
 
+- 정적 파일 경로로 고화질의 웨딩 촬영 사진을 import 하면 성능이 좋지 않은 ec2 혹은 IDC는 이미지 렌더링이 매우 매우 매우 느립니다.
+
+  따라서 10mb 미만의 사진으로 Github ISSUE를 활용한 url 링크 방식을 추천드립니다!
+
+<br/>
 <p align = "center">
-  <img src = "https://github.com/JH8459/WEDDING-INVITATION-LETTER/assets/83164003/02dbf050-2435-4b74-b739-58e2ed709c10" />
+  <img src = "https://github.com/JH8459/WEDDING-INVITATION-LETTER/assets/83164003/37ba70b1-9cc7-48ad-bef6-7ce6df216270" />
 </p>
+<br/>
 
 - 1:1 비율의 썸네일 이미지
 - 3:4 비율의 메인 이미지
